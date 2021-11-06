@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Ephesis&display=swap"
+      rel="stylesheet"
+    />
+    <title>Inicio</title>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <ul>
+          <li><a class="logo" href="index.html">
+            <img
+              src="img/1PNG LOGO.png"
+              width="120"
+              height="120"
+              alt="Logo bomba di ciocolatta"
+            />
+          </a></li>
+          <li><a href="index.html">Inicio</a></li>
+          <li><a href="productos.html">Producto</a></li>
+          <li><a href="galeria.html">Galería</a></li>
+          <li><a href="comunidad.html">Comunidad</a></li>
+          <li><a href="contacto.html">Contacto</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <section>
+      <form action="">
+        <fieldset class="formulario">
+          <legend class="formulario__titulo">Contacto</legend>
+
+          <label for="nombre">Nombre:</label>
+          <input type="text" name="nombre" id="nombre" />
+          <br />
+          <label for="apellido">Apellido:</label>
+          <input type="text" name="apeliido" id="apeliido" />
+          <br />
+          <label for="direccion">Dirección:</label>
+          <input type="text" name="direccion" id="direccion" />
+          <br />
+          <label for="producto">Producto:</label>
+          <select name="producto" id="producto">
+            <option value="op1">Individual</option>
+            <option value="op2">Doble</option>
+            <option value="op3">Pack de 4</option>
+            <option value="op4">Pack de 4 + Taza</option>
+          </select>
+          <br />
+          <label for="entrega">Entrega:</label>
+          <br />
+          <input type="radio" name="entrega" value="domicilio" />
+          <label for="domicilio">Domicilio</label>
+          <br />
+          <input type="radio" name="entrega" value="retiro" />
+          <label for="retiro">Retiro</label>
+          <br />
+          <label for="metodoPago">Método de pago:</label>
+          <br />
+          <input type="radio" name="metodoPago" id="transferencia" />
+          <label for="transferencia">Transferencia</label>
+          <br />
+          <input type="radio" name="metodoPago" id="porPagar" />
+          <label for="porPagar">Pago contra entrega</label>
+          <br />
+          <br />
+          <input type="checkbox" name="aceptar" value="1" />
+          <label for="acepta">Acepta los términos y método de pago</label>
+          <br />
+          <br />
+          <input type="submit" value="Enviar" />
+          <input type="reset" name="limpiarFormulario" id="" />
+        </fieldset>
+      </form>
+    </section>
+
+    <footer>
+      <nav>
+        <ul>
+          <li><a href="productos.html">Producto</a></li>
+          <li><a href="galeria.html">Galería</a></li>
+          <li><a href="comunidad.html">Comunidad</a></li>
+          <li><a href="contacto.html">Contacto</a></li>
+        </ul>
+      </nav>
+      <h5>Coder 2021</h5>
+    </footer>
+  </body>
+</html>

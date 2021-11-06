@@ -1,0 +1,196 @@
+* {
+  margin: 0;
+  padding: 0;
+  
+}
+
+/* ---------------- header ----------------*/
+header {
+  background-image: url("img/Fondo\ header.jpeg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 100%;
+  position: sticky;
+  top: 0px;
+  z-index: 2;
+}
+
+header nav ul {
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+}
+
+header nav li a {
+  color: rgb(255, 247, 222);
+  background-color: rgb(138, 13, 13);
+  padding: 1vh 1vh 1vh 1vh;
+  text-decoration: none;
+  text-align: center;
+  
+}
+
+header nav li:hover{
+  transition: all 1s;
+  transform: rotateX(360deg);
+}
+
+.logo {
+  background: none;
+}
+/* ---------------- end header ----------------*/
+
+
+/* ---------------- section ----------------*/
+section {
+  background-image: radial-gradient(circle,rgb(255, 217, 163) 60%, rgb(253, 247, 231) 100% );
+  height: 100%;
+  margin: 20px 20px 20px 20px; 
+  border: outset 5px rgb(150, 13, 13);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.titulos {
+  color: rgb(150, 13, 13);
+  text-align: center;
+  font-family: "Ephesis", cursive;
+  font-size: 500%;
+}
+
+section article {
+  margin: 1% 10% 5% 10%;
+}
+
+section article p {
+  color: rgb(138, 13, 13);
+  text-align: center;
+}
+
+/* ---------------- section / producto.html ----------------*/
+section table {
+  margin: 1% 10% 5% 10%;
+}
+
+.titulos--producto {
+  color: rgb(150, 13, 13);
+  text-align: center;
+  font-family: "Ephesis", cursive;
+  font-size: 300%;
+}
+
+.productos__titulos {
+  color: rgb(150, 13, 13);
+}
+
+.productos__items {
+  color: rgb(138, 13, 13);
+  
+}
+
+.productos__items ul {
+  list-style: none;
+}
+/* --------------- end section / producto.html ----------------*/
+
+/* ---------------- section / galeria.html ----------------*/
+.galeria {
+  display: grid;
+  grid-template-areas:
+    "img1 img2 img3"
+    "img1 img4 img7"
+    "img5 img6 img7";
+  grid-template-columns:  25% 25% 25%;
+}
+
+.img1 {
+  grid-area: img1;
+  padding: 5%;
+}
+.img2 {
+  grid-area: img2;
+  padding: 5%;
+}
+.img3 {
+  grid-area: img3;
+  padding: 5%;
+}
+.img4 {
+  grid-area: img4;
+  padding: 5%;
+}
+.img5 {
+  grid-area: img5;
+  padding: 5%;
+}
+.img6 {
+  grid-area: img6;
+  padding: 5%;
+}
+.img7 {
+  grid-area: img7;
+  padding: 5%;
+  align-self: flex-end;
+}
+
+.galeria div:hover{
+  transition: all 2s;
+  transform: translate(50px, 50px);
+  transform: scale(1.2);
+}
+
+/* ---------------- end section / galeria.html ----------------*/
+
+/* ---------------- section / contacto.html ----------------*/
+section form {
+  margin: 1% 10% 5% 10%;
+  width: 40%;
+}
+
+.formulario,
+label,
+input,
+select,
+option,
+.formulario__titulo {
+  background-color: rgb(255, 217, 163);
+}
+
+.formulario__titulo {
+  color: rgb(150, 13, 13);
+  text-align: left;
+  font-family: "Ephesis", cursive;
+  font-size: 300%;
+}
+/* ---------------- end section / contacto.html ----------------*/
+/* ---------------- end section ----------------*/
+
+/* ---------------- footer ----------------*/
+footer {
+  background-image: radial-gradient(circle,rgb(170, 26, 18) 80%, rgb(255, 175, 170) 100% );
+  background-color: rgb(170, 26, 18);
+  height: 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+}
+
+footer nav ul {
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+}
+
+footer nav a {
+  color: rgb(255, 247, 222);
+  text-decoration: none;
+  padding: 10%;
+}
+/* ---------------- end footer ----------------*/
