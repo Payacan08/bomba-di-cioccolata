@@ -4,102 +4,113 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="style.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Ephesis&display=swap"
-      rel="stylesheet"
-    />
-    <title>Inicio</title>
+    <meta name="description" content="¡Bombas de chocolate caliente! Solo agrega leche hirviendo y vive la experiencia Bomba di Cioccolata">
+    <meta name="keywords" content="Bomba di Cioccolata, Bombas de chocolate, chocolate caliente, leche con chocolate, bebida dulce, productos">
+    <link rel="stylesheet" href="css/custom.css" />
+
+    <title>BdC-Productos</title>
   </head>
-  <body>
-    <header>
-      <nav>
-        <ul>
-          <li><a class="logo" href="index.html">
-            <img
-              src="img/1PNG LOGO.png"
-              width="120"
-              height="120"
-              alt="Logo bomba di ciocolatta"
-            />
-          </a></li>
-          <li><a href="index.html">Inicio</a></li>
-          <li><a href="productos.html">Producto</a></li>
-          <li><a href="galeria.html">Galería</a></li>
-          <li><a href="comunidad.html">Comunidad</a></li>
-          <li><a href="contacto.html">Contacto</a></li>
-        </ul>
+  <body class="bg-color1 bg-gradient">
+    <header class="bg-color2 bg-gradient mb-3">
+      <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container">
+          <a class="navbar-brand" href="index.html"><img src="img/1PNG LOGO.png" width="120" height="120"
+              alt="Logo bomba di ciocolatta" /></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+            <ul class="navbar-nav">
+              <li class="nav-item me-5">
+                <a class="nav-link text-center text-color4 fs-3" href="index.html">Inicio</a>
+              </li>
+              <li class="nav-item me-5">
+                <a class="nav-link text-center text-color4 fs-3" href="productos.html">Producto</a>
+              </li>
+              <li class="nav-item me-5">
+                <a class="nav-link text-center text-color4 fs-3" href="galeria.html">Galeria</a>
+              </li>
+              <li class="nav-item me-5">
+                <a class="nav-link text-center text-color4 fs-3" href="comunidad.html">Comunidad</a>
+              </li>
+              <li class="nav-item me-5">
+                <a class="nav-link text-center text-color4 fs-3" href="contacto.html">Contacto</a>
+              </li>
+            </ul>
+          </div>
+        </div>
       </nav>
     </header>
 
-    <section>
-      <h3 class="titulos--producto">Productos</h3>
-      <table border="1">
-        <tr class="productos__titulos">
-          <th>Nombre</th>
-          <th>Informacion</th>
-          <th>Caracteristicas</th>
-          <th>Precio</th>
+    <section class="container mb-3 min-vh-79 bg-color1">
+      <div class="card shadow mb-3 bg-color2 bg-gradient">
+        <h3 class="text-center text-color5 fs-1">Productos</h3>
+      <table class="table">
+        <tr>
+          <th scope="col" class="text-color5 fs-3">Nombre</th>
+          <th scope="col" class="text-color5 fs-3">color4rmacion</th>
+          <th scope="col" class="text-color5 fs-3">Caracteristicas</th>
+          <th scope="col" class="text-color5 fs-3">Precio</th>
         </tr>
-        <tr class="productos__items">
-          <td>Individual</td>
+        <tr>
+          <td class="text-color5 fs-4">Individual</td>
           <td>
             <ul>
-              <li>1 bomba di cioccolata</li>
+              <li class="text-color5 fs-4">1 bomba di cioccolata</li>
             </ul>
           </td>
-          <td>Envase de plastico individual en bolsa de papel</td>
-          <td>$1500</td>
+          <td class="text-color5 fs-4">Envase de plastico individual en bolsa de papel</td>
+          <td class="text-color5 fs-4">$1500</td>
         </tr>
-        <tr class="productos__items">
-          <td>doble</td>
+        <tr>
+          <td class="text-color5 fs-4">doble</td>
           <td>
             <ul>
-              <li>2 bomba di cioccolata</li>
+              <li class="text-color5 fs-4">2 bomba di cioccolata</li>
             </ul>
           </td>
-          <td>Envase de plastico doble en bolsa de papel</td>
-          <td>$2500</td>
+          <td class="text-color5 fs-4">Envase de plastico doble en bolsa de papel</td>
+          <td class="text-color5 fs-4">$2500</td>
         </tr>
-        <tr class="productos__items">
-          <td>pack de 4</td>
+        <tr>
+          <td class="text-color5 fs-4">pack de 4</td>
           <td>
             <ul>
-              <li>4 bomba di cioccolata</li>
+              <li class="text-color5 fs-4">4 bomba di cioccolata</li>
             </ul>
           </td>
-          <td>Bandeja de carton cerrada en bolsa de papel</td>
-          <td>$5000</td>
+          <td class="text-color5 fs-4">Bandeja de carton cerrada en bolsa de papel</td>
+          <td class="text-color5 fs-4">$5000</td>
         </tr>
-        <tr class="productos__items">
-          <td>pack de 4 mas taza</td>
+        <tr>
+          <td class="text-color5 fs-4">pack de 4 mas taza</td>
           <td>
             <ul>
-              <li>4 bomba di cioccolata</li>
-              <li>Taza</li>
+              <li class="text-color5 fs-4">4 bomba di cioccolata</li>
+              <li class="text-color5 fs-4">Taza</li>
             </ul>
           </td>
-          <td>
+          <td class="text-color5 fs-4">
             Bandeja de carton cerrada en bolsa de papel <br />taza envuelta en
             tela con cinta
           </td>
-          <td>$6500</td>
+          <td class="text-color5 fs-4">$6500</td>
         </tr>
       </table>
+      </div>
+      
     </section>
 
-    <footer>
-      <nav>
-        <ul>
-          <li><a href="productos.html">Producto</a></li>
-          <li><a href="galeria.html">Galería</a></li>
-          <li><a href="comunidad.html">Comunidad</a></li>
-          <li><a href="contacto.html">Contacto</a></li>
-        </ul>
+    <footer class="row bg-color2">
+      <nav class="nav flex-column flex-sm-row justify-content-center">
+        <a class="nav-link text-center text-color4 fs-5" href="productos.html">Producto</a>
+        <a class="nav-link text-center text-color4 fs-5" href="galeria.html">Galería</a>
+        <a class="nav-link text-center text-color4 fs-5" href="comunidad.html">Comunidad</a>
+        <a class="nav-link text-center text-color4 fs-5" href="contacto.html">Contacto</a>
       </nav>
-      <h5>Coder 2021</h5>
+      <h5 class="text-center text-sm-end">Coder 2021</h5>
     </footer>
+    <script src="js/bootstrap.js"></script>
   </body>
 </html>

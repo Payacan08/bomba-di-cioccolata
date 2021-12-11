@@ -4,95 +4,181 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="style.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Ephesis&display=swap"
-      rel="stylesheet"
-    />
-    <title>Inicio</title>
+    <meta name="description" content="¡Bombas de chocolate caliente! Solo agrega leche hirviendo y vive la experiencia Bomba di Cioccolata">
+    <meta name="keywords" content="Bomba di Cioccolata, Bombas de chocolate, chocolate caliente, leche con chocolate, bebida dulce, contacto, pedido, venta">
+    <link rel="stylesheet" href="css/custom.css" />
+
+    <title>BdC-Contacto</title>
   </head>
-  <body>
-    <header>
-      <nav>
-        <ul>
-          <li><a class="logo" href="index.html">
-            <img
+
+  <body class="bg-color1 bg-gradient">
+    <header class="bg-color2 bg-gradient mb-3">
+      <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container">
+          <a class="navbar-brand" href="index.html"
+            ><img
               src="img/1PNG LOGO.png"
               width="120"
               height="120"
               alt="Logo bomba di ciocolatta"
-            />
-          </a></li>
-          <li><a href="index.html">Inicio</a></li>
-          <li><a href="productos.html">Producto</a></li>
-          <li><a href="galeria.html">Galería</a></li>
-          <li><a href="comunidad.html">Comunidad</a></li>
-          <li><a href="contacto.html">Contacto</a></li>
-        </ul>
+          /></a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNav"
+            aria-controls="navbarNav"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div
+            class="collapse navbar-collapse justify-content-center"
+            id="navbarNav"
+          >
+            <ul class="navbar-nav">
+              <li class="nav-item me-5">
+                <a class="nav-link text-center text-color4 fs-3" href="index.html"
+                  >Inicio</a
+                >
+              </li>
+              <li class="nav-item me-5">
+                <a
+                  class="nav-link text-center text-color4 fs-3"
+                  href="productos.html"
+                  >Producto</a
+                >
+              </li>
+              <li class="nav-item me-5">
+                <a
+                  class="nav-link text-center text-color4 fs-3"
+                  href="galeria.html"
+                  >Galeria</a
+                >
+              </li>
+              <li class="nav-item me-5">
+                <a
+                  class="nav-link text-center text-color4 fs-3"
+                  href="comunidad.html"
+                  >Comunidad</a
+                >
+              </li>
+              <li class="nav-item me-5">
+                <a
+                  class="nav-link text-center text-color4 fs-3"
+                  href="contacto.html"
+                  >Contacto</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
       </nav>
     </header>
 
-    <section>
+    <section class="container min-vh-79">
       <form action="">
-        <fieldset class="formulario">
-          <legend class="formulario__titulo">Contacto</legend>
-
-          <label for="nombre">Nombre:</label>
-          <input type="text" name="nombre" id="nombre" />
-          <br />
-          <label for="apellido">Apellido:</label>
-          <input type="text" name="apeliido" id="apeliido" />
-          <br />
-          <label for="direccion">Dirección:</label>
-          <input type="text" name="direccion" id="direccion" />
-          <br />
-          <label for="producto">Producto:</label>
-          <select name="producto" id="producto">
-            <option value="op1">Individual</option>
-            <option value="op2">Doble</option>
-            <option value="op3">Pack de 4</option>
-            <option value="op4">Pack de 4 + Taza</option>
-          </select>
-          <br />
-          <label for="entrega">Entrega:</label>
-          <br />
-          <input type="radio" name="entrega" value="domicilio" />
-          <label for="domicilio">Domicilio</label>
-          <br />
-          <input type="radio" name="entrega" value="retiro" />
-          <label for="retiro">Retiro</label>
-          <br />
-          <label for="metodoPago">Método de pago:</label>
-          <br />
-          <input type="radio" name="metodoPago" id="transferencia" />
-          <label for="transferencia">Transferencia</label>
-          <br />
-          <input type="radio" name="metodoPago" id="porPagar" />
-          <label for="porPagar">Pago contra entrega</label>
-          <br />
-          <br />
-          <input type="checkbox" name="aceptar" value="1" />
-          <label for="acepta">Acepta los términos y método de pago</label>
-          <br />
-          <br />
-          <input type="submit" value="Enviar" />
-          <input type="reset" name="limpiarFormulario" id="" />
-        </fieldset>
+        <div class="card shadow mb-3 bg-color2 bg-gradient">
+          <div class="row justify-content-center">
+            <div class="col-5 gy-3">
+              <label for="nombre" class="form-label text-color5 fs-3"
+                >Nombre:</label
+              >
+              <input
+                type="text"
+                class="form-control"
+                name="nombre"
+                id="nombre"
+              />
+            </div>
+            <div class="col-5 gy-3">
+              <label for="apellido" class="form-label text-color5 fs-3"
+                >Apellido:</label
+              >
+              <input
+                type="text"
+                class="form-control"
+                name="apeliido"
+                id="apeliido"
+              />
+            </div>
+          </div>
+          <div class="row justify-content-center">
+            <div class="col-5 gy-3">
+              <label for="direccion" class="form-label text-color5 fs-3"
+                >Direccion:</label
+              >
+              <input
+                type="text"
+                class="form-control"
+                name="direccion"
+                id="direccion"
+              />
+            </div>
+            <div class="col-5 gy-3">
+              <label for="dept" class="form-label text-color5 fs-3"
+                >Dept/bloque (Opcional)</label
+              >
+              <input type="text" class="form-control" name="dept" id="dept" />
+            </div>
+          </div>
+          <div class="row justify-content-center">
+            <div class="col-5 gy-3">
+              <label for="producto" class="form-label text-color5 fs-3"
+                >Producto:</label
+              >
+              <select class="form-select" id="producto">
+                <option value="op1">Individual</option>
+                <option value="op2">Doble</option>
+                <option value="op3">Pack de 4</option>
+                <option value="op4">Pack de 4 + Taza</option>
+              </select>
+            </div>
+            <div class="col-5 gy-3">
+              <label for="entrega" class="form-label text-color5 fs-3"
+                >Entrega:</label
+              >
+              <select class="form-select" id="entrega">
+                <option value="op1">Domicilio</option>
+                <option value="op2">Retiro</option>
+              </select>
+            </div>
+          </div>
+          <div class="row justify-content-center">
+            
+          </div>
+          <div class="row justify-content-center">
+            <div class="col-2 gy-3">
+              <div class="btn-group btn-group-lg">
+                <button type="submit" class="btn btn-color1
+             active text-color2 fs-3" value="Enviar">Enviar</button>
+                <button type="reset"class="btn btn-color1
+             text-color5 fs-3"name="limpiarFormulario"id="">Restablecer</button>
+              </div>
+            </div>
+          </div>
+        </div>
       </form>
     </section>
 
-    <footer>
-      <nav>
-        <ul>
-          <li><a href="productos.html">Producto</a></li>
-          <li><a href="galeria.html">Galería</a></li>
-          <li><a href="comunidad.html">Comunidad</a></li>
-          <li><a href="contacto.html">Contacto</a></li>
-        </ul>
+    <footer class="row bg-color2">
+      <nav class="nav flex-column flex-sm-row justify-content-center">
+        <a class="nav-link text-center text-color4 fs-5" href="productos.html"
+          >Producto</a
+        >
+        <a class="nav-link text-center text-color4 fs-5" href="galeria.html"
+          >Galería</a
+        >
+        <a class="nav-link text-center text-color4 fs-5" href="comunidad.html"
+          >Comunidad</a
+        >
+        <a class="nav-link text-center text-color4 fs-5" href="contacto.html"
+          >Contacto</a
+        >
       </nav>
-      <h5>Coder 2021</h5>
+      <h5 class="text-center text-sm-end">Coder 2021</h5>
     </footer>
+    <script src="js/bootstrap.js"></script>
   </body>
 </html>

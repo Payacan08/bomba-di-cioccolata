@@ -4,56 +4,122 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="style.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Ephesis&display=swap"
-      rel="stylesheet"
-    />
-    <title>Inicio</title>
+    <meta name="description" content="¡Bombas de chocolate caliente! Solo agrega leche hirviendo y vive la experiencia Bomba di Cioccolata">
+    <meta name="keywords" content="Bomba di Cioccolata, Bombas de chocolate, chocolate caliente, leche con chocolate, bebida dulce, galeria, fotos">
+    <link rel="stylesheet" href="css/custom.css" />
+
+    <title>BdC-Galeria</title>
   </head>
-  <body>
-    <header>
-      <nav>
-        <ul>
-          <li><a class="logo" href="index.html">
-            <img
-              src="img/1PNG LOGO.png"
-              width="120"
-              height="120"
-              alt="Logo bomba di ciocolatta"
-            />
-          </a></li>
-          <li><a href="index.html">Inicio</a></li>
-          <li><a href="productos.html">Producto</a></li>
-          <li><a href="galeria.html">Galería</a></li>
-          <li><a href="comunidad.html">Comunidad</a></li>
-          <li><a href="contacto.html">Contacto</a></li>
-        </ul>
+  <body class="bg-color1 bg-gradient">
+    <header class="bg-color2 bg-gradient mb-3">
+      <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container">
+          <a class="navbar-brand" href="index.html"><img src="img/1PNG LOGO.png" width="120" height="120"
+              alt="Logo bomba di ciocolatta" /></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+            <ul class="navbar-nav">
+              <li class="nav-item me-5">
+                <a class="nav-link text-center text-color4 fs-3" href="index.html">Inicio</a>
+              </li>
+              <li class="nav-item me-5">
+                <a class="nav-link text-center text-color4 fs-3" href="productos.html">Producto</a>
+              </li>
+              <li class="nav-item me-5">
+                <a class="nav-link text-center text-color4 fs-3" href="galeria.html">Galeria</a>
+              </li>
+              <li class="nav-item me-5">
+                <a class="nav-link text-center text-color4 fs-3" href="comunidad.html">Comunidad</a>
+              </li>
+              <li class="nav-item me-5">
+                <a class="nav-link text-center text-color4 fs-3" href="contacto.html">Contacto</a>
+              </li>
+            </ul>
+          </div>
+        </div>
       </nav>
     </header>
 
-    <section class="galeria">
-      <div class="img1"><img src="img/img_1.jpeg" width="100%" alt=""></div>
-      <div class="img2"><img src="img/img_2.jpeg" width="100%" alt=""></div>
-      <div class="img3"><img src="img/img_3.jpeg" width="100%" alt=""></div>
-      <div class="img4"><img src="img/img_4.jpeg" width="100%" alt=""></div>
-      <div class="img5"><img src="img/img_5.jpeg" width="100%" alt=""></div>
-      <div class="img6"><img src="img/img_6.jpeg" width="100%" alt=""></div>
-      <div class="img7"><img src="img/img_7.jpeg" width="100%" alt=""></div>
+    <section class="row min-vh-79">
+      <div class="col mb-3">
+      <div class="container">
+        <div
+          id="carouselWithInterval"
+          class="carousel slide"
+          data-bs-ride="carousel"
+        >
+          <div class="carousel-inner">
+            <div class="carousel-item active" data-bs-interval="3000">
+              <img
+                src="img/galeria/img_2.jpeg"
+                class="d-block w-100"
+                alt="Slide 1"
+              />
+            </div>
+            <div class="carousel-item">
+              <img
+                src="img/galeria/img_3.jpeg"
+                class="d-block w-100"
+                alt="Slide 2"
+              />
+            </div>
+            <div class="carousel-item">
+              <img
+                src="img/galeria/img_4.jpeg"
+                class="d-block w-100"
+                alt="Slide 3"
+              />
+            </div>
+            <div class="carousel-item">
+              <img
+                src="img/galeria/img_5.jpeg"
+                class="d-block w-100"
+                alt="Slide 4"
+              />
+            </div>
+            <div class="carousel-item">
+              <img
+                src="img/galeria/img_6.jpeg"
+                class="d-block w-100"
+                alt="Slide 5"
+              />
+            </div>
+          </div>
+          <a
+            class="carousel-control-prev"
+            href="#carouselWithInterval"
+            role="button"
+            data-bs-slide="prev"
+          >
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </a>
+          <a
+            class="carousel-control-next"
+            href="#carouselWithInterval"
+            role="button"
+            data-bs-slide="next"
+          >
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </a>
+        </div>
+      </div>
+    </div>
     </section>
 
-    <footer>
-      <nav>
-        <ul>
-          <li><a href="productos.html">Producto</a></li>
-          <li><a href="galeria.html">Galería</a></li>
-          <li><a href="comunidad.html">Comunidad</a></li>
-          <li><a href="contacto.html">Contacto</a></li>
-        </ul>
+    <footer class="row bg-color2">
+      <nav class="nav flex-column flex-sm-row justify-content-center">
+        <a class="nav-link text-center text-color4 fs-5" href="productos.html">Producto</a>
+        <a class="nav-link text-center text-color4 fs-5" href="galeria.html">Galería</a>
+        <a class="nav-link text-center text-color4 fs-5" href="comunidad.html">Comunidad</a>
+        <a class="nav-link text-center text-color4 fs-5" href="contacto.html">Contacto</a>
       </nav>
-      <h5>Coder 2021</h5>
+      <h5 class="text-center text-sm-end">Coder 2021</h5>
     </footer>
+    <script src="js/bootstrap.js"></script>
   </body>
 </html>

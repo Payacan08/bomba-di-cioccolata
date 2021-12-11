@@ -1,0 +1,26 @@
+@import url('https://fonts.googleapis.com/css2?family=Ephesis&display=swap');
+
+$font-family-base: 'Ephesis', cursive;
+
+$theme-colors: (
+);
+// Create your own map
+$custom-colors: (
+  "color1":    rgb(160, 131, 126),
+  "color2":    rgb(110, 80, 72),
+  "color3":    rgb(84, 69, 66),
+  "color4":    rgb(223, 130, 112),
+  "color5":    rgb(237, 193, 184),
+);
+// Merge the maps
+$theme-colors: map-merge($theme-colors, $custom-colors);
+
+$utilities: (
+  "min-viewport-height": (
+      property: min-height,
+      class: min-vh,
+      values: (79: 79vh)
+    ),
+);
+
+@import "../node_modules/bootstrap/scss/bootstrap";
