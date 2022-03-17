@@ -12,8 +12,8 @@
       name="keywords"
       content="Bomba di Cioccolata, Bombas de chocolate, chocolate caliente, leche con chocolate, bebida dulce, contacto, pedido, venta"
     />
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <link rel="stylesheet" href="css/custom.css" />
-
     <title>BdC-Compra</title>
   </head>
 
@@ -94,49 +94,85 @@
 
     <section class="container min-vh-79">
       <div class="row">
-        <div class="col-8">
-            <div class="card shadow mb-3 bg-color2 bg-gradient">
-              <div class="row">
-                <h1 class="text-center text-color5">Contacto</h1>
-              </div>
-              <div class="row justify-content-center">
-                <div class="col-10 col-md-5 gy-3">
-                  <label for="producto" class="form-label text-color5 fs-3"
-                    >Producto:</label
-                  >
-                  <select class="form-select" id="producto">
-                    <option value="ind">Individual</option>
-                    <option value="dob">Doble</option>
-                    <option value="pack">Pack de 4</option>
-                    <option value="packtaza">Pack de 4 + Taza</option>
-                  </select>
-                </div>
-                <div class="col-10 col-md-5 gy-3">
-                  <label for="cantidad" class="form-label text-color5 fs-3">
-                    Cantidad
-                  </label>
-                  <input
-                    class="form-control"
-                    id="cantidad"
-                  />
+        <div class="col-sm-12 col-xl-8">
+          <div class="card shadow mb-3 bg-color2 bg-gradient">
+            <div class="row">
+              <h1 class="text-center text-color5">Compra</h1>
+            </div>
+            <div class="row ">
+              <div class="col col-xl-3 col-md-6 col-sm-12 py-3">
+                <div class="card bg-color3 bg-gradient">
+                  <img src="img/img_2.jpeg" class="card-img-top ind">
+                  <button type="button" id="ind" class="btn btn-outline-primary text-color5">Agregar</button>
                 </div>
               </div>
-              <div class="row justify-content-center"></div>
-              <div class="row justify-content-center">
-                <div class="col-10 gy-3">
-                  <div class="btn-group btn-group-lg">
-                    <button
-                      class="btn btn-color1 active text-color2 fs-3"
-                      id="agregar">
-                      Agregar
-                    </button>
-                  </div>
+              <div class="col col-xl-3 col-md-6 col-sm-12 py-3">
+                <div class="card bg-color3 bg-gradient">
+                  <img src="img/img_3.jpeg" class="card-img-top dob">
+                  <button type="button" id="dob" class="btn btn-outline-primary text-color5">Agregar</button>
+                </div>
+              </div>
+              <div class="col col-xl-3 col-md-6 col-sm-12 py-3">
+                <div class="card bg-color3 bg-gradient">
+                  <img src="img/img_4.jpeg" class="card-img-top pack">
+                  <button type="button" id="pack" class="btn btn-outline-primary text-color5">Agregar</button>                
+                </div>
+              </div>
+              <div class="col col-xl-3 col-md-6 col-sm-12 py-3">
+                <div class="card bg-color3 bg-gradient">
+                  <img src="img/img_5.jpeg" class="card-img-top pack4">
+                  <button type="button" id="pack4" class="btn btn-outline-primary text-color5">Agregar</button>                
                 </div>
               </div>
             </div>
+            <div class="row justify-content-center">
+              <div class="col-11 col-md-5 py-3">
+                <label for="nombre" class="form-label text-color5 fs-3">Nombre:</label>
+                <input type="text" class="form-control bg-color1" id="nombre">
+              </div> 
+              <div class="col-11 col-md-5 py-3">
+                <label for="apellido" class="form-label text-color5 fs-3">Apellido:</label>
+                <input type="text" class="form-control bg-color1" id="apellido">
+              </div> 
+            </div>
+            <div class="row justify-content-center">
+              <div class="col-11 col-md-5 py-3">
+                <label for="numero" class="form-label text-color5 fs-3">N° Celular:</label>
+                <input type="text" class="form-control bg-color1" id="numero">
+              </div>
+              <div class="col-11 col-md-5 py-3"></div>
+            </div>
+            <div class="row justify-content-center">
+              <div class="col-11 col-md-5 py-3">
+                <input class="form-check-input bg-color1 align-baseline" type="radio" name="radioDely" id="radioDely1">
+                <label class="form-check-label text-color5 fs-3" for="radioDely"> Retiro</label>
+              </div>
+              <div class="col-11 col-md-5 py-3">
+                <input class="form-check-input bg-color1 align-baseline" type="radio" name="radioDely" id="radioDely2">
+                <label class="form-check-label text-color5 fs-3" for="radioDely"> Delivery</label>
+              </div> 
+            </div>
+            <div class="row justify-content-center" id="divDireccion" style="display: none;">
+              <div class="col-11 col-md-10 py-3">
+                <label for="apellido" class="form-label text-color5 fs-3">Direccion:</label>
+                <input type="text" class="form-control bg-color1" id="direccion">
+              </div>
+            </div>            
+            <button type="button" id="save" class="btn btn-color3 text-color5">Guardar Información</button>           
+          </div>
         </div>
-        <div class="col-4">
+        <div class="col-sm-12 col-xl-4">
           <div class="card shadow mb-3 bg-color2 bg-gradient">
+            <div class="form-inline">
+              <div class="form-group">
+                <label for="moneda" class="col-form-label col-4 text-color5 fs-4">Moneda</label>
+                <select class="col-form-select col-4 bg-color1 fs-3 text-color5" name="moneda" id="moneda" >
+                <option value="clp">Clp</option>
+                <option value="dolar">Dolar</option>
+                <option value="euro">Euro</option>
+                </select>
+              </div>
+            </div>
             <table class="table text-color5">
               <thead>
                 <tr>
