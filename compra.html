@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="¡Bombas de chocolate caliente! Solo agrega leche hirviendo y vive la experiencia Bomba di Cioccolata"
+    />
+    <meta
+      name="keywords"
+      content="Bomba di Cioccolata, Bombas de chocolate, chocolate caliente, leche con chocolate, bebida dulce, contacto, pedido, venta"
+    />
+    <link rel="stylesheet" href="css/custom.css" />
+
+    <title>BdC-Compra</title>
+  </head>
+
+  <body class="bg-color1 bg-gradient">
+    <header class="bg-color2 bg-gradient mb-3">
+      <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container">
+          <a class="navbar-brand" href="index.html"
+            ><img
+              src="img/1PNG LOGO.png"
+              width="120"
+              height="120"
+              alt="Logo bomba di ciocolatta"
+          /></a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNav"
+            aria-controls="navbarNav"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div
+            class="collapse navbar-collapse justify-content-center"
+            id="navbarNav"
+          >
+            <ul class="navbar-nav">
+              <li class="nav-item me-5">
+                <a
+                  class="nav-link text-center text-color4 fs-3"
+                  href="index.html"
+                  >Inicio</a
+                >
+              </li>
+              <li class="nav-item me-5">
+                <a
+                  class="nav-link text-center text-color4 fs-3"
+                  href="productos.html"
+                  >Producto</a
+                >
+              </li>
+              <li class="nav-item me-5">
+                <a
+                  class="nav-link text-center text-color4 fs-3"
+                  href="galeria.html"
+                  >Galeria</a
+                >
+              </li>
+              <li class="nav-item me-5">
+                <a
+                  class="nav-link text-center text-color4 fs-3"
+                  href="comunidad.html"
+                  >Comunidad</a
+                >
+              </li>
+              <li class="nav-item me-5">
+                <a
+                  class="nav-link text-center text-color4 fs-3"
+                  href="contacto.html"
+                  >Contacto</a
+                >
+              </li>
+              <li class="nav-item me-5">
+                <a
+                  class="nav-link text-center text-color4 fs-3"
+                  href="compra.html"
+                  >Compra</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <section class="container min-vh-79">
+      <div class="row">
+        <div class="col-8">
+            <div class="card shadow mb-3 bg-color2 bg-gradient">
+              <div class="row">
+                <h1 class="text-center text-color5">Contacto</h1>
+              </div>
+              <div class="row justify-content-center">
+                <div class="col-10 col-md-5 gy-3">
+                  <label for="producto" class="form-label text-color5 fs-3"
+                    >Producto:</label
+                  >
+                  <select class="form-select" id="producto">
+                    <option value="ind">Individual</option>
+                    <option value="dob">Doble</option>
+                    <option value="pack">Pack de 4</option>
+                    <option value="packtaza">Pack de 4 + Taza</option>
+                  </select>
+                </div>
+                <div class="col-10 col-md-5 gy-3">
+                  <label for="cantidad" class="form-label text-color5 fs-3">
+                    Cantidad
+                  </label>
+                  <input
+                    class="form-control"
+                    id="cantidad"
+                  />
+                </div>
+              </div>
+              <div class="row justify-content-center"></div>
+              <div class="row justify-content-center">
+                <div class="col-10 gy-3">
+                  <div class="btn-group btn-group-lg">
+                    <button
+                      class="btn btn-color1 active text-color2 fs-3"
+                      id="agregar">
+                      Agregar
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+        </div>
+        <div class="col-4">
+          <div class="card shadow mb-3 bg-color2 bg-gradient">
+            <table class="table text-color5">
+              <thead>
+                <tr>
+                  <th></th>
+                  <th scope="col">Productos</th>
+                  <th scope="col">Precio</th>
+                  <th scope="col">Cantidad</th>
+                  <th scope="col">Total</th>
+                </tr>
+              </thead>
+              <tbody id="tBody">               
+              </tbody>
+              <tfoot id="tFoot">
+                <th></th>
+                <th></th>
+                <th></th>
+                <th>Total:</th>
+                <th id="total"></th>
+              </tfoot>
+            </table>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="row bg-color2">
+      <nav class="nav flex-column flex-sm-row justify-content-center">
+        <a class="nav-link text-center text-color4 fs-5" href="productos.html"
+          >Producto</a
+        >
+        <a class="nav-link text-center text-color4 fs-5" href="galeria.html"
+          >Galería</a
+        >
+        <a class="nav-link text-center text-color4 fs-5" href="comunidad.html"
+          >Comunidad</a
+        >
+        <a class="nav-link text-center text-color4 fs-5" href="contacto.html"
+          >Contacto</a
+        >
+      </nav>
+      <h5 class="text-center text-sm-end">Coder 2021</h5>
+    </footer>
+    <script src="js/apps.js"></script>
+    <script src="js/bootstrap.js"></script>
+  </body>
+</html>

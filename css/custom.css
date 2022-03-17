@@ -35,6 +35,13 @@
     animation: bounce-in-top 2s calc(5s/3) both;
   }
 }
+@media (min-width: 992px) {
+  #navBarItem6 {
+    opacity: 0;
+    -webkit-animation: bounce-in-top 2s calc(6s/3) both;
+    animation: bounce-in-top 2s calc(6s/3) both;
+  }
+}
 section .card {
   -webkit-animation: tilt-in-fwd-bl 1s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
   animation: tilt-in-fwd-bl 1s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;

@@ -23,7 +23,7 @@ $utilities: (
     ),
 );
 
-@for $var from 1 to 6 {         
+@for $var from 1 to 7 {         
         @media (min-width: 992px){
                 #navBarItem#{$var}{
                         opacity: 0 ;
